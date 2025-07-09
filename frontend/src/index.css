@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI Platform Design System - Modern, Professional, Tech-Forward */
+
+@layer base {
+  :root {
+    /* Core Brand Colors - AI Platform Theme */
+    --background: 240 10% 4%;
+    --foreground: 240 10% 98%;
+
+    --card: 240 10% 6%;
+    --card-foreground: 240 10% 98%;
+
+    --popover: 240 10% 6%;
+    --popover-foreground: 240 10% 98%;
+
+    /* Primary - Deep Blue for AI/Tech Feel */
+    --primary: 217 91% 60%;
+    --primary-foreground: 240 10% 98%;
+    --primary-hover: 217 91% 65%;
+    --primary-glow: 217 91% 70%;
+
+    /* Secondary - Subtle Gray */
+    --secondary: 240 5% 15%;
+    --secondary-foreground: 240 10% 90%;
+
+    /* Muted Elements */
+    --muted: 240 5% 10%;
+    --muted-foreground: 240 5% 65%;
+
+    /* Accent - Purple for Highlights */
+    --accent: 270 95% 75%;
+    --accent-foreground: 240 10% 4%;
+    --accent-glow: 270 95% 80%;
+
+    /* Success - AI Green */
+    --success: 142 76% 60%;
+    --success-foreground: 240 10% 4%;
+
+    /* Warning - Amber */
+    --warning: 38 92% 65%;
+    --warning-foreground: 240 10% 4%;
+
+    /* Destructive - Modern Red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 240 10% 98%;
+
+    /* UI Elements */
+    --border: 240 5% 15%;
+    --input: 240 5% 12%;
+    --ring: 217 91% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(240 5% 8%) 100%);
+
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
+    --shadow-accent: 0 0 30px hsl(var(--accent) / 0.2);
+    --shadow-elevated: 0 20px 40px hsl(240 10% 2% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Light theme support - keeping dark as primary */
+  .light {
+    --background: 240 10% 98%;
+    --foreground: 240 10% 4%;
+
+    --card: 240 10% 100%;
+    --card-foreground: 240 10% 4%;
+
+    --popover: 240 10% 100%;
+    --popover-foreground: 240 10% 4%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 240 10% 98%;
+    --primary-hover: 217 91% 55%;
+    --primary-glow: 217 91% 65%;
+
+    --secondary: 240 5% 92%;
+    --secondary-foreground: 240 10% 10%;
+
+    --muted: 240 5% 95%;
+    --muted-foreground: 240 5% 40%;
+
+    --accent: 270 95% 70%;
+    --accent-foreground: 240 10% 98%;
+    --accent-glow: 270 95% 75%;
+
+    --success: 142 76% 55%;
+    --success-foreground: 240 10% 98%;
+
+    --warning: 38 92% 60%;
+    --warning-foreground: 240 10% 98%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 240 10% 98%;
+
+    --border: 240 5% 85%;
+    --input: 240 5% 90%;
+    --ring: 217 91% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

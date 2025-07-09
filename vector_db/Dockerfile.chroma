@@ -1,0 +1,11 @@
+FROM ghcr.io/chroma-core/chroma:latest
+
+COPY chroma_config.yaml /config.yaml
+USER root
+
+EXPOSE 8000
+RUN apt-get update && apt-get install -y curl && apt-get clean
+
+
+ENTRYPOINT ["chroma"]
+CMD ["run", "./config.yaml"]
